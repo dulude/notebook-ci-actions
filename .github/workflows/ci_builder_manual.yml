@@ -53,17 +53,16 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build/html
     # HTML Accessibility Scan
-    - name: AccessibilityScan:
-      - uses: actions/checkout@v3
-      - name: Web Accessibility Evaluation of https://spacetelescope.github.io/${{ github.event.repository.name }}/
-        uses: a11ywatch/github-actions@v2.1.6
-        with:
-          WEBSITE_URL: https://spacetelescope.github.io/${{ github.event.repository.name }}/
-          SITE_WIDE: true
-          SUBDOMAINS: true
-          SITEMAP: true
-          UPGRADE: true
-          LIST: true
-          EXTERNAL: false
-          UPLOAD: true
-          FAIL_TOTAL_COUNT: 1
+    - name: Web Accessibility Evaluation of https://spacetelescope.github.io/${{ github.event.repository.name }}/
+      uses: actions/checkout@v3
+      uses: a11ywatch/github-actions@v2.1.6
+      with:
+        WEBSITE_URL: https://spacetelescope.github.io/${{ github.event.repository.name }}/
+        SITE_WIDE: true
+        SUBDOMAINS: true
+        SITEMAP: true
+        UPGRADE: true
+        LIST: true
+        EXTERNAL: false
+        UPLOAD: true
+        FAIL_TOTAL_COUNT: 1
