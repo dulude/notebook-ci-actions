@@ -54,7 +54,6 @@ jobs:
         publish_dir: ./_build/html
     # HTML Accessibility Scan
     - name: Web Accessibility Evaluation of https://spacetelescope.github.io/${{ github.event.repository.name }}/
-      uses: actions/checkout@v3
       uses: a11ywatch/github-actions@v2.1.6
       with:
         WEBSITE_URL: https://spacetelescope.github.io/${{ github.event.repository.name }}/
