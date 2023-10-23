@@ -1,7 +1,7 @@
 name: HTML Accessibility Check
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
   a11yWatchRun:
