@@ -20,3 +20,4 @@ jobs:
           EXTERNAL: false
           UPLOAD: true
           FAIL_TOTAL_COUNT: 1
+          TLD: true
