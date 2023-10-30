@@ -7,7 +7,7 @@ on:
         type: 'string'
         description: "URL to scan"
         required: false
-        default: "https://spacetelescope.github.io/${{ github.event.repository.name }}"
+        default: https://spacetelescope.github.io/${{ github.event.repository.name }}
 
 jobs:
   a11yWatchRun:
