@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
-      - name: Web Accessibility Evaluation of ${{ inputs.target_url }}/intro.html<<<<<<<
+      - name: Web Accessibility Evaluation of ${{ inputs.target_url }}
         uses: a11ywatch/github-actions@v2.1.8
         with:
-          WEBSITE_URL: ${{ inputs.target_url }}/intro.html
+          WEBSITE_URL: ${{ inputs.target_url }}
           SITE_WIDE: true
           SUBDOMAINS: true
           SITEMAP: true
