@@ -4,10 +4,11 @@ on:
   workflow_call:
     inputs:
       target_url:
-        type: 'string'
+        default: https://spacetelescope.github.io/${{ github.event.repository.name }}
         description: "URL to scan"
         required: false
-        default: https://spacetelescope.github.io/${{ github.event.repository.name }}
+        type: 'string'
+        
 
 jobs:
   a11yWatchRun:
