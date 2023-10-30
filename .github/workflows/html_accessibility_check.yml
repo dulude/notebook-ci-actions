@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
-      - name: Web Accessibility Evaluation of https://spacetelescope.github.io/${{ github.event.repository.name }}/index.html
+      - name: Web Accessibility Evaluation of https://spacetelescope.github.io/${{ github.event.repository.name }}/intro.html
         uses: a11ywatch/github-actions@v2.1.8
         with:
-          WEBSITE_URL: https://spacetelescope.github.io/${{ github.event.repository.name }}/index.html
+          WEBSITE_URL: https://spacetelescope.github.io/${{ github.event.repository.name }}/intro.html
           SITE_WIDE: true
           SUBDOMAINS: true
           SITEMAP: true
