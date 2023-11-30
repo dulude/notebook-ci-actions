@@ -11,7 +11,7 @@ jobs:
       - name: Check for broken links
         uses: ScholliYT/Broken-Links-Crawler-Action@v3
         with:
-          website_url: "https://spacetelescope.github.io/jdat_notebooks/"
+          website_url: "https://spacetelescope.github.io/hst_notebooks/"
           resolve_before_filtering: 'true'
           verbose: 'Error'
           max_retry_time: 30
