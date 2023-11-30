@@ -13,6 +13,6 @@ jobs:
         with:
           website_url: "https://spacetelescope.github.io/jdat_notebooks/"
           resolve_before_filtering: 'true'
-          verbose: 'True'
+          verbose: 'Error'
           max_retry_time: 30
           max_retries: 5
