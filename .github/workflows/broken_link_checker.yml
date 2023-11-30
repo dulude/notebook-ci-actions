@@ -14,7 +14,7 @@ jobs:
           website_url: "https://spacetelescope.github.io/hst_notebooks/"
           include_url_prefix: "https://spacetelescope.github.io/hst_notebooks/"
           resolve_before_filtering: 'true'
-          verbose: 'false'
+          verbose: 'true'
           max_retry_time: 30
           max_retries: 5
           max_depth: 2
