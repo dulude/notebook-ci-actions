@@ -4,18 +4,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  broken_link_checker_job:
+  find_broken_links:
     runs-on: ubuntu-latest
     name: Check for broken links
     steps:
       - name: Check for broken links
-        id: link-report
-        uses: celinekurpershoek/link-checker@v1.0.2
+        uses: ScholliYT/Broken-Links-Crawler-Action@v3
         with:
-          # Required:
-          url: "https://spacetelescope.github.io/hst_notebooks/"
-          # optional:
-          honorRobotExclusions: false
-          recursiveLinks: true # Check all URLs on all reachable pages (could take a while)
-      - name: Get the result
-        run: echo "${{steps.link-report.outputs.result}}"
+          website_url: "https://spacetelescope.github.io/hst_notebooks/"
+          # include_url_prefix: "https://spacetelescope.github.io/hst_notebooks/"
+          resolve_before_filtering: 'true'
+          verbose: 'true'
+          max_retry_time: 30
+          max_retries: 5
+          max_depth: 1
