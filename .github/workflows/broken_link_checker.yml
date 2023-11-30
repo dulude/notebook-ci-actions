@@ -1,13 +1,13 @@
 # This workflow checks notebook html pages deployed to github.io for broken links. If 
-# broken links are found, the workflow will fail and report a list of the broken links 
-# and the pages that contain them.
+# broken links are found, the workflow will fail and report a list of the broken link 
+# URLs and the URLs of the pages that contain them.
 #
 # Inputs
 # website_url : string, optional.
 #   The URL of the website to check. If not specified, the default value is 
 #   'https://spacetelescope.github.io/<your repository name here>'. NOTE: In some cases,
 #   the default value for website_url may not result in the workflow search for broken
-#   links ONLY on that page. The solution is to explicitly specifying the full url of the
+#   links ONLY on that page. The solution is to explicitly specify the full URL of the
 #   repository's starting page 
 #   (e.g. https://spacetelescope.github.io/<your repository name here>/intro.html'). 
 
