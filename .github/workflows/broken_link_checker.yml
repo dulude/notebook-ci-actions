@@ -12,4 +12,4 @@ jobs:
         id: link-report
         uses: elliotforbes/broken-link-checker@1.0.3
         with:
-          url: 'https://spacetelescope.github.io/hst_notebooks/'
+          url: 'https://spacetelescope.github.io/hst_notebooks/index.html'
