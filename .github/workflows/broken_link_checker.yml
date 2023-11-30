@@ -10,6 +10,12 @@ jobs:
     steps:
       - name: Check for broken links
         id: link-report
-        uses: elliotforbes/broken-link-checker@1.0.3
+        uses: celinekurpershoek/link-checker@v1.0.2
         with:
-          url: 'https://spacetelescope.github.io/hst_notebooks'
+          # Required:
+          url: "https://spacetelescope.github.io/hst_notebooks/"
+          # optional:
+          honorRobotExclusions: false
+          recursiveLinks: true # Check all URLs on all reachable pages (could take a while)
+      - name: Get the result
+        run: echo "${{steps.link-report.outputs.result}}"
