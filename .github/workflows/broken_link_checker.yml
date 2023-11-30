@@ -11,10 +11,8 @@ jobs:
       - name: Check for broken links
         uses: ScholliYT/Broken-Links-Crawler-Action@v3
         with:
-          website_url: "https://spacetelescope.github.io/mast_notebooks/"
-          # include_url_prefix: "https://spacetelescope.github.io/hst_notebooks/"
+          website_url: "https://spacetelescope.github.io/mast_notebooks/intro.html"
           resolve_before_filtering: 'true'
           verbose: 'True'
           max_retry_time: 30
           max_retries: 5
-          # max_depth: 2
